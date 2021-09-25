@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+
+    <resultMap id="user" type="diary.domain.UserVo">
+        <result property="userName"           column="USER_NAME"/>
+        <result property="userTel"            column="USER_TEL"/>
+        <result property="userEmail"          column="USER_EMAIL"/>
+        <result property="userNickname"       column="USER_NICKNAME"/>
+        <result property="userPassword"       column="USER_PASSWORD"/>
+        <result property="userGender"         column="USER_GENDER"/>
+        <result property="platformType"       column="PLATFORM_TYPE"/>
+
+    </resultMap>
+
+    <!-- 등록 -->
+    <insert id="create">
+        <![CDATA[
+            INSERT INTO TB_USER (
+                USER_NAME
+                , USER_TEL
+                , USER_EMAIL
+                , USER_NICKNAME
+                , USER_PASSWORD
+                , USER_GENDER
+                , PLATFORM_TYPE
+            ) VALUES (
+                #{userName}
+                , #{userTel}
+                , #{userEmail}
+                , #{userNickname}
+                , #{userPassword}
+                , #{userGender}
+                , #{platformType}
+            )
+            ]]>
+    </insert>
+
+    <!-- 읽기 -->
+    <select id="read" resultMap="user">
+        <![CDATA[
+            SELECT
+                USER_NAME
+                 , USER_TEL
+                 , USER_EMAIL
+                 , USER_NICKNAME
+                 , USER_PASSWORD
+                 , USER_GENDER
+                 , PLATFORM_TYPE
+            FROM TB_USER
+            WHERE USER_NICKNAME = #{userNickname}
+            LIMIT 1
+            ]]>
+    </select>
+
+    <!-- 목록 -->
+    <select id="all" resultMap="user">
+        <![CDATA[
+            SELECT
+                USER_NAME
+                , USER_TEL
+                , USER_EMAIL
+                , USER_NICKNAME
+                , USER_PASSWORD
+                , USER_GENDER
+                , PLATFORM_TYPE
+            FROM TB_USER
+            WHERE USER_NICKNAME IS NOT NULL
+            ]]>
+        <!--검색-->
+        <if test="searchType != null and searchType !='' and searchKeyword != null and searchKeyword !=''">
+            <choose>
+                <when test="searchType.equals('userName')">
+                    AND USER_NICKNAME LIKE CONCAT('%', #{searchKeyword}, '%')
+                </when>
+                <when test="searchType.equals('userEmail')">
+                    AND USER_EMAIL LIKE CONCAT('%', #{searchKeyword}, '%')
+                </when>
+                <when test="searchType.equals('userTel')">
+                    AND USER_TEL LIKE CONCAT('%', #{searchKeyword}, '%')
+                </when>
+                <when test = "searchType.equals('searchAll')">
+                    AND (
+                    USER_NAME LIKE CONCAT('%', #{searchKeyword}, '%')
+                    OR USER_EMAIL LIKE CONCAT('%', #{searchKeyword}, '%')
+                    OR USER_TEL LIKE CONCAT('%', #{searchKeyword}, '%')
+                    )
+                </when>
+            </choose>
+        </if>
+        <![CDATA[
+            ORDER BY USER_NICKNAME ASC, USER_EMAIL ASC
+            ]]>
+    </select>
+
+    <!-- 수정 -->
+    <update id="update">
+        <![CDATA[
+            UPDATE TB_USER SET UPDATE_DATE_TIME = #{updateDateTime}
+            ]]>
+        <if test="userTel != null and userTel != ''">
+            , USER_TEL = #{userTel}
+        </if>
+        <if test="userName != null and userName != ''">
+            , USER_NAME = #{userName}
+        </if>
+        <if test="userPassword != null and userPassword != ''">
+            , USER_PASSWORD = #{userPassword}
+        </if>
+        <if test="userEmail != null and userEmail != ''">
+            , USER_EMAIL = #{userEmail}
+        </if>
+        <if test="userNickname != null and userNickname != ''">
+            , USER_NICKNAME = #{userNickname}
+        </if>
+        <![CDATA[
+            WHERE USER_NAME = #{userName}
+            LIMIT 1
+            ]]>
+    </update>
+
+    <!-- 삭제 -->
+    <delete id="delete">
+        <![CDATA[
+            DELETE FROM TB_USER
+            WHERE USER_NICKNAME = #{userNickname}
+            LIMIT 1
+            ]]>
+    </delete>
+
+</mapper>
