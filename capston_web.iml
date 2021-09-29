@@ -6,6 +6,7 @@
         <fileset id="fileset" name="Servlet Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring/servlet-context.xml</file>
           <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring/spring-context.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml</file>
         </fileset>
       </configuration>
     </facet>

@@ -258,7 +258,7 @@
         </dependency>
         <!--// 데이터베이스 -->
 
-        <!-- mariadb -->
+        <!-- mariadb & mysql -->
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
@@ -269,7 +269,7 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql-connector-java-version}</version>
         </dependency>
-        <!--// mariadb -->
+        <!--// mariadb & mysql -->
 
         <!-- (추가) 오라클 11g -->
         <dependency>

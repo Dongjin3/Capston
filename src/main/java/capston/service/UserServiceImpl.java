@@ -1,7 +1,7 @@
-package diary.service;
+package capston.service;
 
-import diary.domain.UserVo;
-import diary.persistence.UserDAO;
+import capston.domain.UserVo;
+import capston.persistence.UserDAO;
 import org.springframework.stereotype.Service;
 
 import javax.inject.Inject;

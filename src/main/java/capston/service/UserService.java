@@ -1,6 +1,6 @@
-package diary.service;
+package capston.service;
 
-import diary.domain.UserVo;
+import capston.domain.UserVo;
 
 import java.util.List;
 
