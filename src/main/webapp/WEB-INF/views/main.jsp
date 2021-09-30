@@ -1,42 +1,58 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="icon.png">
-    <link rel="canonical" href="sample.html">
-    <title>쏘위</title>
-    <link type="text/css" rel="stylesheet" href="sample.css">
-    <meta name="description" content="함께 만들어가는 자취인들의 앱, 쏘위">
-    <link rel="author" href="캡스톤디자인">
-</head>
-<body>
-<header id="fixed-bar">
-    <div id="fixed-bar-wrap">
-        <h1 id="fixed-bar-title" class="fixed-bar-box-shadow">
-            <a href="sample.html">
-                <img class="fixed-logo" alt="자취왕" src="logo.PNG">
-                <ul id="navigation">
-                    <li><a href="#">게시판</a></li>
-                    <li><a href="#">채팅</a></li>
-                    <li><a href="#">메뉴</a></li>
-                </ul>
-                <button class="login-button" onclick="location.href='login-test.html'" style="margin-left: 20px;">
-                    <span class="button-text">로그인</span>
-                </button>
-            </a>
-        </h1>
-    </div>
-</header>
-<section id="info">
-    <div id="info-first">
-        <p>(예시) 우리가 함께 만들어가는 쏘위</p><br><br>
-        <h2 id="banner1">모든 기능들을 손쉽게 어플로 만나보세요.</h2>
-        <div id="banner1-image"></div>
-        <br>
-        <button class="download-button">
-            <span class="button-text">다운로드</span>
-        </button>
-    </div>
-</section>
-</body>
+<html>
+    <head>
+        <title>자취왕</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+        <link href="image/icon_sample.png" rel="shortcut icon" type="image/x-icon">
+    </head>
+    <body>
+        <header id="fixed-bar">
+            <div id="fixed-bar-wrap">
+                <h4 id="fixed-bar-title" class="fixed-bar-box-shadow">
+                    <a href="main.html">
+                        <img id="logo" alt="자취왕" src="image/logo.PNG">
+                    </a>
+                    <button type="button" class="membership">membership</button>
+                    <button type="button" class="login" onclick="location='/auth/login.jsp/'"><span>로그인</span></button>
+                </h4>
+            </div>
+        </header>
+        <div id="wrapper">
+            <nav id="nav">
+                <div>
+                <a href="#" class="icon solid fa-home">
+                </a>
+                </div>
+                <div>
+                <a href="#buy" class="icon solid fa-shopping-basket">
+                </a>
+                </div>
+                <div>
+                <a href="#list" class="icon solid fa-list">
+                </a>
+                </div>
+            </nav>
+            <div>
+                <article>
+                    <div class="bubble-main">
+                        <div class="main">
+                            <span id="arrow-left" class="icon solid fa-chevron-left"></span>
+                            <img src="image/sample.png" style="width: 200px; height: 200px; margin-right: 50px;">
+                            <header>
+                            <h1>앱 다운로드</h1>
+                            <br>
+                            <p>지금 앱을 다운 받아보세요. 모든 기능을 사용할 수 있습니다.</p>
+                            <br>
+                            <input type="button" value="앱 다운로드">
+                            </header>
+                            <span id="arrow-right" class="icon solid fa-chevron-right"></span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </body>
 </html>
