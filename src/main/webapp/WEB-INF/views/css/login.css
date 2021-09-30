@@ -228,31 +228,6 @@ button {
     color: red;
 }
 
-#layer1 {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    border: 2px solid black;
-    background-color: white;
-    top: 0; right: 0; bottom: 0; left: 0;
-    width: 500px; height: 200px;
-    padding-bottom: 40px; margin: auto;
-    background: #fff; z-index: 8;
-    display: none;
-}
-
-/*#layer2 {
-    width:100px; height:100px;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    padding-bottom: 45px; margin: auto;
-    margin-bottom: 400px;
-    border: none;
-    z-index: 10;
-    display: none;
-}*/
-
 .confirm-btn {
     width:95px;
     height:35px;
@@ -260,13 +235,4 @@ button {
     border: 0;
     border-radius: 4px;
     background: linear-gradient(162deg, yellowgreen 0%, yellowgreen 50%, yellowgreen 100%);
-}
-
-#mask {
-    width: 100%; height: 100%;
-    position: fixed;
-    background: rgba(0,0,0,0.7) repeat;
-    top: 0; left: 0; z-index: 999;
-    display: none;
-    
 }
