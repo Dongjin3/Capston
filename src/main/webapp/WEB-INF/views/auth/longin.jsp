@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css/">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link href="image/icon_sample.png" rel="shortcut icon" type="image/x-icon">
     <title>자취왕</title>
@@ -34,12 +34,12 @@
                 <div class="login-input-container">
                     <div class="login-input-wrap">
                         <i class="far fa-envelope"></i>
-                        <input placeholder="Email" type="text" id="userid">
+                        <input placeholder="Email" type="text" id="Email">
                     </div>
                     
                     <div class="login-input-wrap">
                         <i class="fas fa-key"></i>
-                        <input placeholder="Password" type="password" id="userpw">
+                        <input placeholder="Password" type="password" id="PW">
                     </div>
                 </div>
                 <br>
@@ -58,20 +58,33 @@ var loginButton = document.getElementById("loginButton");
 loginButton.addEventListener('click', loginFunc);
 
 function loginFunc() {
-    var userid = document.getElementById("userid").value;
-    var userpw = document.getElementById("userpw").value;
+    var Email = document.getElementById("Email").value;
+    var PW = document.getElementById("PW").value;
     var not = document.getElementById("fail");
+
+    function Check() {
+        if(Email == "") {
+            not.innerText = "아이디를 입력하세요";
+            not.style.display = "block";
+            return false;
+        } else if(Email != "" && PW == "") {
+            not.innerText = "비밀번호를 입력하세요";
+            not.style.display = "block";
+            return false;
+        } else if(Email != "admin" || PW != "1234") {
+            not.innerText = "아이디 또는 비밀번호를 다시 확인해주세요";
+            not.style.display = "block";
+        } else if(Email == "admin" && PW == "1234") {
+            not.style.display = "none";
+            return true;
+        } else {
+            return false;
+        }
+    }
     
-    if(userid == "") {
-        not.innerText = "이메일을 입력하세요";
-        not.style.display = "block";
-    } else if(userid != "" && userpw == "") {
-        not.innerText = "암호를 입력하세요";
-        not.style.display = "block";
-    } else if(userid,userpw != ""){
-        not.style.display = "none";
-    } else {
-        return;
+    if(Check()) {
+        
+        location.href = "main.html";
     }
 }
 </script>
