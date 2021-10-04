@@ -161,7 +161,7 @@ function register() {
         pw2Msg.innerText = "";
     }
 /** 비밀번호 확인 검사 */
-/** 임시 전화번호 검사(아임포트 본인인증 예정) */
+/** 전화번호 검사 - 아임포트 본인인증 */
 /** if (phone.length == 0) {
         phoneMsg.innerText("전화번호를 입력해주세요");
     } else {
