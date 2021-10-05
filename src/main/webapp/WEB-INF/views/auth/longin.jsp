@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,8 +29,8 @@
                 <div class="top-logo-wrap">
                     
                 </div>
-                <h1>로그인 해서 쏘위를 시작해요!</h1>
-                <p>쏘위에서는 자취인들끼리 소통하고 공동구매를 할 수 있습니다. 공동구매를 통해 부담을 줄이고 레벨도<br>올려보세요!</p>
+                <h1>로그인 해서 자취왕을 시작해요!</h1>
+                <p>자취왕에서는 자취인들끼리 소통하고 공동구매를 할 수 있습니다. 공동구매를 통해 부담을 줄이고 레벨도<br>올려보세요!</p>
             </div>
             <div class="login-form-left-side">
                 <div class="login-input-container">
