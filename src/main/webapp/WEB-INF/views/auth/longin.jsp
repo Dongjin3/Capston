@@ -49,7 +49,7 @@
                 <div class="login-btn-wrap">
                     <button class="login-btn" id="loginButton">로그인</button>
                     <a href="#">암호를 잊으셨나요?</a>
-                    <a href="/auth/register.jsp/">회원가입</a>
+                    <a href="<c:url value='/auth/register.jsp/'>">회원가입</a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@ function loginFunc() {
     
     if(Check()) {
         
-        location.href = "main.html";
+        location.href = "<c:url value='/auth/main.jsp'>";
     }
 }
 </script>
