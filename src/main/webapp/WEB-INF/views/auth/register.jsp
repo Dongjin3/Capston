@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,7 +72,7 @@
                     <br><br><br>
                     <div class="register-btn-wrap">
                         <button class="register-btn" id="registerBtn" onClick="register()">가입하기</button>
-                        <button class="register-btn" id="cancelBtn" onclick="location.href='login.html'">취소</button>
+                        <button class="register-btn" id="cancelBtn" onclick="location.href='<c:url value='/auth/login.jsp/'>'">취소</button>
                     </div>
                 </div>
             </div>
