@@ -80,19 +80,19 @@
     </div>
 </body>
 <script>
+let email = document.getElementById("email");
+let name1 = document.getElementById("name");
+let nick = document.getElementById("nick");
+let phone = document.getElementById("phone");
 
-var email = document.getElementById("email");
-var name1 = document.getElementById("name");
-var nick = document.getElementById("nick");
-var phone = document.getElementById("phone");
+let eMsg = document.getElementById("eMsg");
+let nameMsg = document.getElementById("nameMsg");
+let nickMsg = document.getElementById("nickMsg");
+let phoneMsg = document.getElementById("phoneMsg");
+let notAccess = document.getElementById("notAccess");
 
-var eMsg = document.getElementById("eMsg");
-var nameMsg = document.getElementById("nameMsg");
-var nickMsg = document.getElementById("nickMsg");
-var phoneMsg = document.getElementById("phoneMsg");
-var notAccess = document.getElementById("notAccess");
-
-var emailtext = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+let emailtext = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+let specialCheck = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
 
 
 function register() {
@@ -120,6 +120,12 @@ function register() {
 /** 닉네임 검사 */
     if (nick.value == "") {
         nickMsg.innerText = "닉네임을 입력해주세요";
+    } else if(nick.value.search(/\s/) != -1) {
+        nickMsg.innerText = "닉네임은 빈칸 사용 불가입니다";
+    } else if(nick.value.length < 2) {
+        nickMsg.innerText = "닉네임은 2글자 이상 필수입니다.";
+    } else if(specialCheck.test(nick.value)) {
+        nickMsg.innerText = "닉네임은 특수문자를 포함할 수 없습니다."
     } else {
         nickMsg.innerText = "";
     }
@@ -127,17 +133,17 @@ function register() {
 
 /** 비밀번호 검사 */
 
-    var pw1 = document.getElementById("pw1");
-    var pw2 = document.getElementById("pw2");
-    var pw1Msg = document.getElementById("pw1Msg");
-    var pw2Msg = document.getElementById("pw2Msg");
+    let pw1 = document.getElementById("pw1");
+    let pw2 = document.getElementById("pw2");
+    let pw1Msg = document.getElementById("pw1Msg");
+    let pw2Msg = document.getElementById("pw2Msg");
 
-    var pwa = pw1.value;
-    var pwb = pw2.value;
+    let pwa = pw1.value;
+    let pwb = pw2.value;
 
-    var num1 = pwa.search(/[0-9]/g);
-    var eng1 = pwa.search(/[a-z]/ig);
-    var spe1 = pwa.search(/[`~!@@#$%^&*|\\\'\";:\/?]/gi);
+    let num1 = pwa.search(/[0-9]/g);
+    let eng1 = pwa.search(/[a-z]/ig);
+    let spe1 = pwa.search(/[`~!@@#$%^&*|\\\'\";:\/?]/gi);
 
     if(pwa.length < 6 && pwa.length > 0) {
         pw1Msg.innerText = "비밀번호는 최소 6자 이상입니다";
@@ -162,6 +168,5 @@ function register() {
         return true;
     }
 }
-
 </script>
 </html>
