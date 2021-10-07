@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/register.css/">
-    <link href="image/icon_sample.png" rel="shortcut icon" type="image/x-icon">
+    <link href="resources/images/icon_sample.png" rel="shortcut icon" type="image/x-icon">
     <title>자취왕</title>
 </head>
 <body id="body">
@@ -14,7 +14,7 @@
         <div id="top-bar-wrap">
             <h4 id="top-bar-title" class="top-bar-shadow">
                 <a href="main.html">
-                    <img id="logo" alt="자취왕" src="image/logo.PNG">
+                    <img id="logo" alt="자취왕" src="resources/images/logo.PNG">
                 </a>
                 <span class="membership">membership</span>
                 <button type="button" class="login" onclick="location.href='login.html'"><span>로그인</span></button>
