@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
-    <link href="image/icon_sample.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/resources/images/icon_sample.png" rel="shortcut icon" type="image/x-icon">
     <title>자취왕</title>
 </head>
 <body id="body">
@@ -17,7 +17,7 @@
         <div id="top-bar-wrap">
             <h4 id="top-bar-title" class="top-bar-shadow">
                 <a href="main.html">
-                    <img id="logo" alt="자취왕" src="image/logo.PNG">
+                    <img id="logo" alt="자취왕" src="resources/images/logo.PNG">
                 </a>
                 <span class="membership">membership</span>
             </h4>
