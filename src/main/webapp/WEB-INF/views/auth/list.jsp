@@ -29,7 +29,7 @@
                 <button>
                     <span><strong>전체보기</strong></span>
                 </button>
-                <button onclick="ex()">
+                <button onclick="notice()">
                     <span>공지사항</span>
                 </button>
                 <button onclick="eve()">
@@ -137,8 +137,8 @@ button {
     function main() {
         location.href = "<c:url value='/auth/main.jsp'>";
     }
-    function ex() {
-        location.href = "<c:url value='/auth/ex.jsp'>";
+    function notice() {
+        location.href = "<c:url value='/auth/notice.jsp'>";
     }
     function eve() {
         location.href = "<c:url value='/auth/event.jsp'>";
