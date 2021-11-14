@@ -121,7 +121,7 @@ button {
 </style>
 <script>
     function main() {
-        location.href = "<c:url value='/auth/main.jsp'>";
+        location.href = "<c:url value='/main.jsp'>";
     }
 </script>
 </html>
