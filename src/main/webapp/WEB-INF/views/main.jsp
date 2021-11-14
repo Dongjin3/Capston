@@ -103,6 +103,9 @@
             원하는 사람과 함께 대화할 수 있는 채팅까지</p>
         </div>
     </section>
+    <div class="banner">
+
+    </div>
     <section class="main2">
         <div class="main2-section1">
             <div>
@@ -124,19 +127,19 @@
                 <br>
             </div>
             <div style="display: flex; flex-direction: row; align-items: center;
-            margin-top: 80px;">
+            margin-top: 100px;">
                 <img src="images/main2-image4.PNG" alt="" class="main2-image4">
-                <p>이웃들의 프로필을 통해 등급을 확인해보세요.<br>
-                등급이 높으면 높을수록 자취왕과 함께한 시간이 많을거고,<br>
+                <p>이웃들의 프로필을 통해 등급을 확인해보세요.
+                등급이 높으면 높을수록 자취왕과<br> 함께한 시간이 많을거고,
                 가지고 있는 정보량도 상당히 많을겁니다.</p>
             </div>
             <div style="display: flex; flex-direction: row; align-items: center;
-            margin-top: 50px;">
+            margin-top: 60px;">
                 <img src="images/main2-image4.PNG" alt="" class="main2-image5">
-                <p>등급을 높이는 방법은 어렵지 않답니다.<br>
+                <p>등급을 높이는 방법은 어렵지 않답니다.
                 꾸준한 공동구매를 통해 비용을 절약하고,<br>
-                게시판을 통해 사람들과 계속 소통하다 보면<br>
-                등급도 자연스럽게 올라가고 노하우도 쌓일거에요.</p>
+                게시판을 통해 사람들과 계속 소통하다 보면
+                등급도 자연스럽게 올라가고 <br> 노하우도 쌓일거에요.</p>
             </div>
             <img src="images/메인페이지 디자인(영상 대용).PNG" alt="" class="main2-video">
             <button class="download-btn2-wrap">
@@ -144,6 +147,11 @@
             </button>
         </div>
     </section>
+    <footer>
+        <div class="footer">
+
+        </div>
+    </footer>
 </body>
 <style>
 
@@ -180,7 +188,7 @@ button {
     left: 0;
     right: 0;
     z-index: 100;
-    padding: 16px 0;
+    padding: 5px 0;
 }
 
 .container {
@@ -250,28 +258,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.left-btn {
-    width: 90px; height: 90px;
-    margin-bottom: -20px;
-    margin-right: -27px;
-    background-color: white;
-    border: none;
-    box-shadow: 1px 1px 1px 1px lightgray;
-}
-
-.main1-section1 {
     margin-top: 130px;
-}
-
-.right-btn {
-    width: 90px; height: 90px;
-    margin-bottom: -20px;
-    margin-left: -30px;
-    background-color: white;
-    border: none;
-    box-shadow: 1px 1px 1px 1px lightgray;
 }
 
 .main1-image1 {
@@ -315,6 +302,13 @@ button {
     width: 450px;
 }
 
+.banner {
+    width: 100%;
+    height: 240px;
+    background-color: rgb(204, 204, 204);
+    margin-top: 100px;
+}
+
 .right-btn {
     border-radius: 50%
 }
@@ -323,13 +317,14 @@ button {
     width: 100%;
     height: 752px;
     margin: 0 auto;
+    margin-top: 100px;
 }
 
 .main2-section1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    
 }
 
 .main2-image1 {
@@ -340,7 +335,7 @@ button {
 .main2-image2 {
     width: 300px;
     height: 7px;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .main2-image3 {
@@ -349,13 +344,13 @@ button {
 
 .main2-image4 {
     width: 300px;
-    margin-left: -300px;
+    margin-left: -110px;
     margin-right: 50px;
 }
 
 .main2-image5 {
     width: 300px;
-    margin-left: -355px;
+    margin-left: -100px;
     margin-right: 50px;
 }
 
@@ -428,6 +423,13 @@ button {
 .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
 .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+
+.footer {
+    width: 100%;
+    height: 542px;
+    background-color: rgb(204, 204, 204);
+    margin-top: 1500px;
+}
 </style>
 <script>
     function list() {
