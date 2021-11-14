@@ -23,36 +23,22 @@
     <div class="wrap">
         <div class="list-wrap">
             <div class="list-title">
-                <h1>게시판</h1>
-            </div>
-            <div class="category">
-                <button>
-                    <span><strong>전체보기</strong></span>
-                </button>
-                <button onclick="notice()">
-                    <span>공지사항</span>
-                </button>
-                <button onclick="eve()">
-                    <span>이벤트</span>
-                </button>
-                <button onclick="art()">
-                    <span>보도자료</span>
-                </button>
+                <h1>공지사항</h1>
             </div>
             <div class="list">
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <p class="title" onclick="">공지사항입니다.</p>
+                    <p class="title" onclick="">공지사항1입니다.</p>
                     <p class="date">2021.10.15</p>
                 </div>
                 <div class="item">
-                    <p class="tag" id="eve">이벤트</p>
-                    <p class="title" onclick="">이벤트입니다.</p>
+                    <p class="tag" id="board">공지사항</p>
+                    <p class="title" onclick="">공지사항2입니다.</p>
                     <p class="date">2021.10.15</p>
                 </div>
                 <div class="item">
-                    <p class="tag" id="art">보도자료</p>
-                    <p class="title" onclick="">보도자료입니다.</p>
+                    <p class="tag" id="board">공지사항</p>
+                    <p class="title" onclick="">공지사항3입니다.</p>
                     <p class="date">2021.10.15</p>
                 </div>
             </div>
@@ -136,15 +122,6 @@ button {
 <script>
     function main() {
         location.href = "<c:url value='/auth/main.jsp'>";
-    }
-    function notice() {
-        location.href = "<c:url value='/auth/notice.jsp'>";
-    }
-    function eve() {
-        location.href = "<c:url value='/auth/event.jsp'>";
-    }
-    function art() {
-        location.href = "<c:url value='/auth/article.jsp'>";
     }
 </script>
 </html>
