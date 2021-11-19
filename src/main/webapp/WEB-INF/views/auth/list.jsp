@@ -9,13 +9,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 </head>
 <body>
-    <nav id="static-bar">
+    <nav id="static-bar" style="background: url('resources/image/static-bar1.png') no-repeat;">
         <div class="container">
             <div class="nav-header">
                 <button class="logo" onclick="main()">
-                    <img src="images/logo.PNG" alt="" title="자취왕">
+                    <img src="resources/image/logo.PNG" alt="" title="자취왕">
+                </button>
+            </div>
+            <div class="button">
+                <button class="notice-btn-wrap" onclick="list()">
+                    <img src="resources/image/notice.PNG" alt="" title="공지사항">
                 </button>
             </div>
         </div>
@@ -23,105 +30,72 @@
     <div class="wrap">
         <div class="list-wrap">
             <div class="list-title">
-                <h1>공지사항</h1>
+                <p style="font-size: 60px; color: #707070;"><strong>공지사항</strong></p>
+            </div>
+            <div class="category">
+                <p style="font-size: 30px; color: #707070;;"><strong>공지사항</strong></p>
             </div>
             <div class="list">
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <p class="title" onclick="">공지사항1입니다.</p>
-                    <p class="date">2021.10.15</p>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
+                    <p class="date">2021/10/15</p>
                 </div>
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <p class="title" onclick="">공지사항2입니다.</p>
-                    <p class="date">2021.10.15</p>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
+                    <p class="date">2021/10/15</p>
                 </div>
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <p class="title" onclick="">공지사항3입니다.</p>
-                    <p class="date">2021.10.15</p>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
+                    <p class="date">2021/10/15</p>
+                </div>
+                <div class="item">
+                    <p class="tag" id="board">공지사항</p>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
+                    <p class="date">2021/10/15</p>
+                </div>
+                <div class="item">
+                    <p class="tag" id="board">공지사항</p>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
+                    <p class="date">2021/10/15</p>
+                </div>
+                <div class="item">
+                    <p class="tag" id="board">공지사항</p>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
+                    <p class="date">2021/10/15</p>
                 </div>
             </div>
         </div>
-        <div>
+        <!--<div class="page_wrap">
+            <div class="page_nation" id="pages">
+               <a class="arrow pprev" href="#" style="background:#ffffff url('resources/image/page_pprev.png') no-repeat center center;"></a>
+               <a class="arrow prev" href="#"><i class="fas fa-chevron-left"></i>               </a>
+               <a href="#" class="active">1</a>
+               <a href="#">2</a>
+               <a href="#">3</a>
+               <a href="#">4</a>
+               <a href="#">5</a>
+               <a class="arrow next" href="#"><i class="fas fa-chevron-right"></i></a>
+               <a class="arrow nnext" href="#"><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>-->
+        <div id="pagingMarketS" class="paging">
+        </div>        
     </div>
-    
-        
-    </div>
+    <footer>
+        <div class="footer">
+
+        </div>
+    </footer>
 </body>
-<style>
-
-button {
-    cursor:pointer;
-}
-
-#static-bar {
-    width: 100%;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    border-bottom: solid gray 1px;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-header {
-    margin-left: 50px;
-}
-
-.logo {
-    border: none;
-    background-color: #fff;
-}
-
-button {
-    border: none;
-    background-color: white;
-    font-size: 20px;
-}
-
-.wrap {
-    margin-top: 100px;
-}
-
-.list-title {
-    margin-left: 190px;
-}
-
-.category {
-    margin-left: 190px;
-}
-
-.list {
-    width: 75%;
-    margin-left: 190px;
-}
-
-.item {
-    border-left: black solid 1px;
-    border-right: black solid 1px;
-    border-top: black solid 0.5px;
-    border-bottom: black solid 0.5px;
-    padding: 6px 0;
-}
-
-.tag {
-    font-size: 12px;
-}
-
-.date {
-    font-size: 12px;
-}
-</style>
-<script>
+<script type="text/javascript">
     function main() {
-        location.href = "<c:url value='/main.jsp'>";
+        location.href = "<c:url value='/auth/main.jsp'>";
+    }
+    function board() {
+        location.href = "<c:url value='/auth/board.jsp'>";
     }
 </script>
 </html>
