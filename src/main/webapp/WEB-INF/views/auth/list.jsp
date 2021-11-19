@@ -9,20 +9,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/list.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/list.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 </head>
 <body>
-    <nav id="static-bar" style="background: url('resources/image/static-bar1.png') no-repeat;">
+    <nav id="static-bar" style="background: url('/resources/image/static-bar1.png') no-repeat;">
         <div class="container">
             <div class="nav-header">
                 <button class="logo" onclick="main()">
-                    <img src="resources/image/logo.PNG" alt="" title="자취왕">
+                    <img src="/resources/image/logo.PNG" alt="" title="자취왕">
                 </button>
             </div>
             <div class="button">
                 <button class="notice-btn-wrap" onclick="list()">
-                    <img src="resources/image/notice.PNG" alt="" title="공지사항">
+                    <img src="/resources/image/notice.PNG" alt="" title="공지사항">
                 </button>
             </div>
         </div>
