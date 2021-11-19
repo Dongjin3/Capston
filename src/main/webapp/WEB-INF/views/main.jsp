@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>자취왕</title>
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 1903px)" href="/resources/css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1540px)" href="/resources/css/main2.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 320px)" href="/resources/css/main1.css">
 </head>
 <body>
