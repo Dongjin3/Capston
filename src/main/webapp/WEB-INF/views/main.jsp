@@ -22,7 +22,7 @@
         </button>
     </div>
     <div class="top">
-        <img src="/resources/image/MainBanner1.png" alt="" width="100%">
+        <img src="/resources/image/MainBanner.png" alt="" width="100%">
     </div>
     <div class="section1-wrap">
         <div class="section1">
