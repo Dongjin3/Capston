@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/resources/css/board.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="/resources/css/board1.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width:425px)" href="/resources/css/board2.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/Img_08.png">
     <title>공지사항</title>
 </head>
 <body>
