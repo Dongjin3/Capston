@@ -98,7 +98,7 @@
     <div class="section5">
         <img src="/resources/image/vedio.PNG" alt="" class="sample">
         <button class="download-btn2">
-            <img src="/resources/image/Button_04.png" width="100%" id="btn4">
+            <img src="/resources/image/Button_04.png" width="100%">
         </button>
     </div>
     <footer>
