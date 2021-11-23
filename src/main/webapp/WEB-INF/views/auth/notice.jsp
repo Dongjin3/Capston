@@ -9,19 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
-    <link rel="stylesheet" type="text/css" href="resources/css/notice.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="resources/css/notice1.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:522px)" href="resources/css/notice2.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/notice.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="/resources/css/notice1.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:522px)" href="/resources/css/notice2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div class="header">
         <button class="top-button" onclick="main()">
-            <img src="resources/image/logo.PNG" alt="" style="width: 100%;">
+            <img src="/resources/image/logo.PNG" alt="" style="width: 100%;">
         </button>
         <button class="top-button">
-            <img src="resources/image/notice.PNG" alt="" style="width: 100%;">
+            <img src="/resources/image/notice.PNG" alt="" style="width: 100%;">
         </button>
     </div>
     <div class="wrap">
@@ -86,7 +86,7 @@
             <br>상품의 예약, 이용 및 환불 등과 관련한 <strong>의무와 책임은 각 판매자에게</strong> 있습니다.</p>
             <div class="footer-text1">
                 <ul class="footer-ul">
-                    <li><img src="resources/image/Img_09.png"> 자취왕 |</li>
+                    <li><img src="/resources/image/Img_09.png"> 자취왕 |</li>
                 </ul>
                 <ul class="footer-ul">
                     <li>회사 소개</li>
