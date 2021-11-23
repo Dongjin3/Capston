@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="/resources/css/notice1.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width:522px)" href="/resources/css/notice2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/Img_08.png">
     <script src="/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
