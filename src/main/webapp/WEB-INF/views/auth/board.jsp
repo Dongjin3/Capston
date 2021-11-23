@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/resources/css/board.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="/resources/css/board1.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width:425px)" href="/resources/css/board2.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/Img_08.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/Img_05.png">
     <title>공지사항</title>
 </head>
 <body>
@@ -57,12 +57,12 @@
     </div>
     <footer>
         <div class="footer">
-            <img src="resources/image/Img_08.png" alt="">
+            <img src="resources/image/Img_05.png" alt="">
             <p class="footer-text">자취왕은 통신판매 중개자로서 <strong>통신판매의 당사자가 아니며</strong>
             <br>상품의 예약, 이용 및 환불 등과 관련한 <strong>의무와 책임은 각 판매자에게</strong> 있습니다.</p>
             <div class="footer-text1">
                 <ul class="footer-ul">
-                    <li><img src="/resources/image/Img_09.png"> 자취왕 |</li>
+                    <li><img src="/resources/image/Img_06.png"> 자취왕 |</li>
                 </ul>
                 <ul class="footer-ul">
                     <li>회사 소개</li>
