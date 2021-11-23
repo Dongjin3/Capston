@@ -2,49 +2,38 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자취왕</title>
-    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1903px)" href="/resources/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="/resources/css/main1.css"
 </head>
-<body>
-    <nav id="static-bar" style="background: url('resources/image/static-bar1.png') no-repeat;">
-        <div class="container">
-            <div class="nav-header">
-                <button class="logo">
-                    <img src="/resources/image/logo.PNG" alt="" title="자취왕">
-                </button>
-            </div>
-            <div class="button">
-                <button class="notice-btn-wrap" onclick="list()">
-                    <img src="/resources/image/notice.PNG" alt="" title="공지사항">
-                </button>
-            </div>
-        </div>
-    </nav>
-    <div class="top" style="background: transparent url('/resources/image/MainBanner.png') 0% 0% no-repeat padding-box;">
-        <div class="top-container">
-            <div class="top-main">
-                <img src="/resources/image/top.PNG" alt="">
-            </div>
+<body oncontextmenu="return false;">
+    <div class="header">
+        <button class="top-button">
+            <img src="/resources/image/logo.PNG" alt="" style="width: 100%;">
+        </button>
+        <button class="top-button" onclick="notice()">
+            <img src="/resources/image/notice.PNG" alt="" style="width: 100%;">
+        </button>
+    </div>
+    <div class="top">
+        <img src="/resources/image/MainBanner1.png" alt="" width="100%">
+    </div>
+    <div class="section1-wrap">
+        <div class="section1">
+            <img src="/resources/image/test.PNG" alt="" style="width: 100%;">
         </div>
     </div>
-    <section class="main1">
-        <img src="/resources/image/Img_01.png" alt="" class="Img_01">
-        <div class="text1">
-            <img src="/resources/image/Img_02.PNG" alt="" class="Img_02">
-        </div>
-        <div class="text2">
-            <img src="/resources/image/Img_03.PNG" alt="" class="Img_03">
-        </div>
-        <div class="main1-section3">
+    <div class="section2-wrap">
+        <div class="section2">
             <div class="slidebox">
                 <input type="radio" name="slide" id="slide01" checked>
-	            <input type="radio" name="slide" id="slide02">
-	            <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
                 <ul class="slidelist">
                     <li class="slideitem">
                         <a><img src="/resources/image/red.png"></a>
@@ -71,54 +60,87 @@
                     </div>
                 </div>
             </div>
-            <img src="/resources/image/PhoneImg.png" alt="" class="PhoneImg">
-            <div>
-                <img src="/resources/image/text3.PNG" alt="" class="text3">
-            </div>
         </div>
-    </section>
-    <div class="banner2">
-        <img src="/resources/image/banner2.png" alt="" style="width: 100%;">
     </div>
-    <button class="download-btn1">
-        <img src="/resources/image/button.png" alt="" style="width: 250px;">
-    </button>
-    <section class="main2">
-        <div class="main2-section1">
-            <div>
-                <img src="/resources/image/Img_04.png" alt="" class="Img_04">
-                <img src="/resources/image/Img_05.png" alt="" class="Img_05">
-            </div>
-            <div>
-                <img src="/resources/image/text4.PNG" alt="" class="text4">
-            </div>
-            <div>
-                <img src="/resources/image/text5.PNG" alt="" class="text5">
-            </div>
-            <div>
-                <img src="/resources/image/Img_06.png" alt="" class="Img_06">
-            </div>
-            <div>
-                <img src="/resources/image/Img_07.png" alt="" class="Img_07">
-            </div>
-            <div>
-                <img src="/resources/image/vedio.png" alt="" class="main2-video">
-            </div>
-            <button class="download-btn2-wrap">
-                <img src="/resources/image/Button_03.png" alt="" class="download-btn2-text" id="btn">
-            </button>
+    <div class="blank-wrap">
+        <div class="blank">
+            <img src="/resources/image/blank.png" alt="" style="width: 100%;">
         </div>
-    </section>
+    </div>
+    <div class="section2_1-wrap">
+        <div class="section2_1">
+            <img src="/resources/image/test1.PNG" style="width: 100%;">
+        </div>
+    </div>
+    <div class="banner-wrap" style="background: url('/resources/image/MiddleBanner.png');
+    background-size: cover;">
+        <header>
+            <div class="middle-text">
+                <img src="/resources/image/banner2-text2.png" alt="" style="width: 100%;">
+            </div>
+            <button class="middle-btn">
+                <img src="/resources/image/button.png" alt="" style="width: 80%;">
+            </button>
+        </header>
+    </div>
+    <div class="section3">
+        <img src="/resources/image/Img_04.png" alt="" class="rank">
+        <img src="/resources/image/Img_05.png" alt="" class="rank">
+    </div>
+    <div class="section3-text">
+        <img src="/resources/image/text4.PNG" alt="" class="text4">
+    </div>
+    <div class="section4">
+        <img src="/resources/image/text5.PNG" alt="" class="text5">
+        <img src="/resources/image/Img_061.png" alt="" class="img6">
+    </div>
+    <div class="section5">
+        <img src="/resources/image/vedio.PNG" alt="" class="sample">
+        <button class="download-btn2">
+            <img src="/resources/image/Button_03.png" width="100%" id="btn4">
+        </button>
+    </div>
     <footer>
         <div class="footer">
-
+            <img src="/resources/image/Img_08.png" alt="" class="footer-logo">
+            <p class="footer-text">자취왕은 통신판매 중개자로서 <strong>통신판매의 당사자가 아니며</strong>
+            <br>상품의 예약, 이용 및 환불 등과 관련한 <strong>의무와 책임은 각 판매자에게</strong> 있습니다.</p>
+            <div class="footer-text1">
+                <ul class="footer-ul">
+                    <li><img src="/resources/image/Img_09.png"> 자취왕 |</li>
+                </ul>
+                <ul class="footer-ul">
+                    <li>회사 소개</li>
+                </ul>
+                <ul class="footer-ul">
+                    <li>이용 약관</li>
+                </ul>
+                <ul class="footer-ul">
+                    <li>개인정보취급방침</li>
+                </ul>
+                <br>
+                <ul class="footer-ul">
+                    <li>JCWang@mjc.ac.kr</li>
+                </ul>
+                <ul class="footer-ul">
+                    <li>공지사항</li>
+                </ul>
+                <ul class="footer-ul">
+                    <li>FAQ</li>
+                </ul>
+                <ul class="footer-ul">
+                    <li>010-0000-0000</li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                <p>COPYRIGHT ⓒ 2021 MYONGJI College. ALL RIGHTS RESERVED.명지전문대학</p>
+            </div>
         </div>
     </footer>
 </body>
 <script>
-    function list() {
-        location.href = "<c:url value='/auth/list.jsp'>";
+    function notice() {
+        location.href = "<c:url value='/auth/notice.jsp'>";
     }
-    
 </script>
 </html>
