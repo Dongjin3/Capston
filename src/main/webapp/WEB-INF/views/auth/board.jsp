@@ -62,7 +62,7 @@
             <br>상품의 예약, 이용 및 환불 등과 관련한 <strong>의무와 책임은 각 판매자에게</strong> 있습니다.</p>
             <div class="footer-text1">
                 <ul class="footer-ul">
-                    <li><img src="/resources/image/Img_06.png"> 자취왕 |</li>
+                    <li><img src="/resources/image/Button_05.png"> 자취왕 |</li>
                 </ul>
                 <ul class="footer-ul">
                     <li>회사 소개</li>
