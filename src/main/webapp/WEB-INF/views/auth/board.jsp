@@ -48,7 +48,7 @@
                     <p><strong>다음글</strong></p> <span style="margin-left: 20px;" onclick="board()">공지사항2입니다.</span>
                 </div>
                 <div class="back-button">
-                    <button class="back-button-wrap">
+                    <button class="back-button-wrap" onclick="notice()">
                         <img src="resources/image/back-button.PNG" alt="" class="button-image">
                     </button>
                 </div>
