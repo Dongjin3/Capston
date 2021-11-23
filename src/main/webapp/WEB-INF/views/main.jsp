@@ -10,7 +10,7 @@
     <title>자취왕</title>
     <link rel="stylesheet" type="text/css" href="/resources/css/main.css">
     <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="/resources/css/main1.css">
-    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/Img_08.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/Img_05.png">
 </head>
 <body oncontextmenu="return false;">
     <div class="header">
@@ -26,7 +26,7 @@
     </div>
     <div class="section1-wrap">
         <div class="section1">
-            <img src="/resources/image/test.PNG" alt="" style="width: 100%;">
+            <img src="/resources/image/Img_01.PNG" alt="" style="width: 100%;">
         </div>
     </div>
     <div class="section2-wrap">
@@ -70,45 +70,45 @@
     </div>
     <div class="section2_1-wrap">
         <div class="section2_1">
-            <img src="/resources/image/test1.PNG" style="width: 100%;">
+            <img src="/resources/image/text1.PNG" style="width: 100%;">
         </div>
     </div>
     <div class="banner-wrap" style="background: url('/resources/image/MiddleBanner.png');
     background-size: cover;">
         <header>
             <div class="middle-text">
-                <img src="/resources/image/banner2-text2.png" alt="" style="width: 100%;">
+                <img src="/resources/image/MiddleBanner-text.png" alt="" style="width: 100%;">
             </div>
             <button class="middle-btn">
-                <img src="/resources/image/button.png" alt="" style="width: 80%;">
+                <img src="/resources/image/Button_03.png" alt="" style="width: 80%;">
             </button>
         </header>
     </div>
     <div class="section3">
-        <img src="/resources/image/Img_04.png" alt="" class="rank">
-        <img src="/resources/image/Img_05.png" alt="" class="rank">
+        <img src="/resources/image/Img_02.png" alt="" class="rank">
+        <img src="/resources/image/Img_03.png" alt="" class="rank">
     </div>
     <div class="section3-text">
-        <img src="/resources/image/text4.PNG" alt="" class="text4">
+        <img src="/resources/image/text2.PNG" alt="" class="text2">
     </div>
     <div class="section4">
-        <img src="/resources/image/text5.PNG" alt="" class="text5">
-        <img src="/resources/image/Img_061.png" alt="" class="img6">
+        <img src="/resources/image/text3.PNG" alt="" class="text3">
+        <img src="/resources/image/Img_04.png" alt="" class="img6">
     </div>
     <div class="section5">
         <img src="/resources/image/vedio.PNG" alt="" class="sample">
         <button class="download-btn2">
-            <img src="/resources/image/Button_03.png" width="100%" id="btn4">
+            <img src="/resources/image/Button_04.png" width="100%" id="btn4">
         </button>
     </div>
     <footer>
         <div class="footer">
-            <img src="/resources/image/Img_08.png" alt="" class="footer-logo">
+            <img src="/resources/image/Img_05.png" alt="" class="footer-logo">
             <p class="footer-text">자취왕은 통신판매 중개자로서 <strong>통신판매의 당사자가 아니며</strong>
             <br>상품의 예약, 이용 및 환불 등과 관련한 <strong>의무와 책임은 각 판매자에게</strong> 있습니다.</p>
             <div class="footer-text1">
                 <ul class="footer-ul">
-                    <li><img src="/resources/image/Img_09.png"> 자취왕 |</li>
+                    <li><img src="/resources/image/Img_06.png"> 자취왕 |</li>
                 </ul>
                 <ul class="footer-ul">
                     <li>회사 소개</li>
