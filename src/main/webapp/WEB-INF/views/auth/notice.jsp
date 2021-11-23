@@ -35,32 +35,32 @@
             <div class="list">
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <span class="title" onclick="">공지사항입니다.</span>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
                     <p class="date">2021/10/15</p>
                 </div>
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <span class="title" onclick="">공지사항입니다.</span>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
                     <p class="date">2021/10/15</p>
                 </div>
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <span class="title" onclick="">공지사항입니다.</span>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
                     <p class="date">2021/10/15</p>
                 </div>
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <span class="title" onclick="">공지사항입니다.</span>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
                     <p class="date">2021/10/15</p>
                 </div>
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <span class="title" onclick="">공지사항입니다.</span>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
                     <p class="date">2021/10/15</p>
                 </div>
                 <div class="item">
                     <p class="tag" id="board">공지사항</p>
-                    <span class="title" onclick="">공지사항입니다.</span>
+                    <span class="title" onclick="board()">공지사항입니다.</span>
                     <p class="date">2021/10/15</p>
                 </div>
             </div>
@@ -120,6 +120,9 @@
 <script>
     function main() {
         location.href = "<c:url value='/auth/main.jsp'>";
+    }
+    function board() {
+        location.href = "<c:url value='/auth/board.jsp'>";
     }
 </script>
 <script>
