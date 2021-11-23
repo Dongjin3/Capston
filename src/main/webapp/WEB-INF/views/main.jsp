@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자취왕</title>
     <link rel="stylesheet" type="text/css" href="/resources/css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="/resources/css/main1.css"
+    <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="/resources/css/main1.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/image/Img_08.png">
 </head>
 <body oncontextmenu="return false;">
     <div class="header">
