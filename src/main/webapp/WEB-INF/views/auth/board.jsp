@@ -41,10 +41,10 @@
                     공지사항 상세 내용입니다.
                 </div>
                 <div class="prev">
-                    <p><strong>이전글</strong></p> <span style="margin-left: 20px;">공지사항입니다.</span>
+                    <p><strong>이전글</strong></p> <span style="margin-left: 20px;" onclick="board()">공지사항입니다.</span>
                 </div>
                 <div class="next">
-                    <p><strong>다음글</strong></p> <span style="margin-left: 20px;">공지사항2입니다.</span>
+                    <p><strong>다음글</strong></p> <span style="margin-left: 20px;" onclick="board()">공지사항2입니다.</span>
                 </div>
                 <div class="back-button">
                     <button class="back-button-wrap">
@@ -98,6 +98,9 @@
     }
     function notice() {
         location.href = "<c:url value='/auth/notice.jsp'>";
+    }
+    function board() {
+        location.href = "<c:url value='/auth/board.jsp'>";
     }
 </script>
 </html>
