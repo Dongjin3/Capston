@@ -120,7 +120,7 @@
 </body>
 <script>
     function main() {
-        location.href = "<c:url value='/auth/main.jsp'>";
+        location.href = "<c:url value='main.jsp'>";
     }
     function board() {
         location.href = "<c:url value='/auth/board.jsp'>";
