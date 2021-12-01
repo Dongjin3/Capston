@@ -96,7 +96,7 @@
         <img src="/resources/image/Img_04.png" alt="" class="img6">
     </div>
     <div class="section5">
-        <img src="/resources/image/vedio.PNG" alt="" class="sample">
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/RBhFDP6eNNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <button class="download-btn2">
             <img src="/resources/image/Button_04.png" width="100%">
         </button>
