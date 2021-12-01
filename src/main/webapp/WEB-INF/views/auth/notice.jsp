@@ -128,9 +128,9 @@
 </script>
 <script>
     const common = {
-        totalCount : 200,
+        totalCount : 3,
         recordsPerPage : 6,
-        navPage : 5
+        navPage : 1
     };
 
     $('document').ready(function() {
